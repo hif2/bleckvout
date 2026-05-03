@@ -111,6 +111,7 @@
             transition: var(--transition);
             text-transform: uppercase;
             letter-spacing: 1px;
+            display: inline-block;
         }
 
         .btn:hover {
@@ -189,7 +190,7 @@
             text-transform: uppercase;
         }
 
-        /* --- Avaliações (Testimonials) --- */
+        /* --- Avaliações --- */
         .testimonials {
             background: var(--gray);
             padding: 100px 5%;
@@ -216,11 +217,53 @@
 
         .card .author { font-weight: 700; color: var(--primary); }
 
-        /* --- Footer --- */
+        /* --- Footer (Contatos) --- */
         footer {
-            padding: 50px 5%;
+            padding: 80px 5% 50px 5%;
             text-align: center;
+            background: var(--dark);
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        .contact-info i {
+            color: var(--primary);
+            margin-right: 10px;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            margin-top: 20px;
+        }
+
+        .btn-whatsapp:hover {
+            transform: scale(1.05);
+            background-color: #128c7e;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+        }
+
+        .copyright {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #666;
         }
 
         /* Animações */
@@ -309,7 +352,23 @@
     </section>
 
     <footer id="contato">
-        <p>&copy; 2024 BleckVout Marketing Agency. Todos os direitos reservados.</p>
+        <div class="section-title">
+            <h2>Fale Conosco</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> guilhermerodrigues@bleckvout.shop</p>
+            <p><i class="fas fa-phone"></i> 43 99636-3109</p>
+            
+            <a href="https://wa.me/5543996363109" target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Iniciar Conversa com Guilherme
+            </a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2024 BleckVout Marketing Agency. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
 </body>
